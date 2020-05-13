@@ -6,28 +6,33 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="config-server" />
+        <module name="demo" />
         <module name="eureka-server" />
-        <module name="simulation_data_acquisition" />
-        <module name="feign-consumer" />
+        <module name="config-server" />
         <module name="api-gateway" />
+        <module name="simulation-data-acquisition" />
+        <module name="feign-consumer" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="api-gateway" target="11" />
       <module name="config-server" target="11" />
+      <module name="demo" target="11" />
       <module name="eureka-server" target="11" />
       <module name="feign-consumer" target="11" />
-      <module name="simulation_data_acquisition" target="11" />
+      <module name="simulation-data-acquisition" target="11" />
+      <module name="simulation-data-generation" target="11" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="api-gateway" options="-parameters" />
       <module name="config-server" options="-parameters" />
+      <module name="demo" options="-parameters" />
       <module name="eureka-server" options="-parameters" />
       <module name="feign-consumer" options="-parameters" />
-      <module name="simulation_data_acquisition" options="-parameters" />
+      <module name="simulation-data-acquisition" options="-parameters" />
+      <module name="simulation-data-generation" options="-parameters" />
     </option>
   </component>
 </project>
