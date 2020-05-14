@@ -1,7 +1,10 @@
 package cn.yifeng.simulation.service;
 
+import cn.yifeng.simulation.dao.WeatherMapper;
+import cn.yifeng.simulation.dto.Weather;
 import org.springframework.amqp.rabbit.annotation.RabbitHandler;
 import org.springframework.amqp.rabbit.annotation.RabbitListener;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 /**
@@ -13,8 +16,12 @@ import org.springframework.stereotype.Component;
 @Component
 @RabbitListener(queues = "weather")
 public class WeatherReceiver {
+
+    @Autowired
+    WeatherMapper weatherMapper;
+
     @RabbitHandler
-    public void process(String hello) {
-        System.out.println("Receiver :" + hello);
+    public void process(Weather weather) {
+        weatherMapper.insert(weather.getTemperature(),weather.getHumidity(),weather.getTimestamp());
     }
 }

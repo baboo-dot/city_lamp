@@ -1,8 +1,6 @@
 package cn.yifeng.simulation.dto;
 
-import lombok.Getter;
-import lombok.Setter;
-import lombok.ToString;
+import lombok.*;
 
 import java.io.Serializable;
 import java.sql.Timestamp;
@@ -16,6 +14,8 @@ import java.sql.Timestamp;
 @Getter
 @Setter
 @ToString
+@AllArgsConstructor
+@NoArgsConstructor
 public class Weather implements Serializable {
     private Float temperature;
     private Float humidity;

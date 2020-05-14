@@ -7,11 +7,10 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="eureka-server" />
-        <module name="config-server" />
-        <module name="simulation-data-generation" />
-        <module name="simulation-data-acquisition" />
         <module name="feign-consumer" />
+        <module name="eureka-server" />
+        <module name="simulation-data-acquisition" />
+        <module name="simulation-data-generation" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

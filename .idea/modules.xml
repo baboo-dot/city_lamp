@@ -3,7 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/city_lamp.iml" filepath="$PROJECT_DIR$/city_lamp.iml" />
-      <module fileurl="file://$PROJECT_DIR$/config-server/config-server.iml" filepath="$PROJECT_DIR$/config-server/config-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/eureka-server/eureka-server.iml" filepath="$PROJECT_DIR$/eureka-server/eureka-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/feign-consumer/feign-consumer.iml" filepath="$PROJECT_DIR$/feign-consumer/feign-consumer.iml" />
       <module fileurl="file://$PROJECT_DIR$/simulation-data-acquisition/simulation-data-acquisition.iml" filepath="$PROJECT_DIR$/simulation-data-acquisition/simulation-data-acquisition.iml" />

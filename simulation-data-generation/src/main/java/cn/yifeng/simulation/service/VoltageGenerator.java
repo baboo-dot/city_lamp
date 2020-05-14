@@ -21,12 +21,8 @@ public class VoltageGenerator {
     private AmqpTemplate rabbitTemplate;
 
     public void send() {
-//        context中voltage换成电压数据
-//        String context = "voltage" + new Date();
         Random random = new Random();
         Voltage voltage = new Voltage(random.nextFloat()*100, new Timestamp(System.currentTimeMillis()));
-        System.out.println("Sender : " + voltage);
-//        this.rabbitTemplate.convertAndSend("voltage",context);
         this.rabbitTemplate.convertAndSend("voltage", voltage);
     }
 }
