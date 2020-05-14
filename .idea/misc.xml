@@ -3,7 +3,6 @@
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
-        <option value="$PROJECT_DIR$/feign-consumer/pom.xml" />
         <option value="$PROJECT_DIR$/eureka-server/pom.xml" />
         <option value="$PROJECT_DIR$/simulation_data_acquisition/pom.xml" />
         <option value="$PROJECT_DIR$/simulation-data-acquisition/pom.xml" />

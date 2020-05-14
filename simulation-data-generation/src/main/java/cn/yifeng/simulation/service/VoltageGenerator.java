@@ -22,7 +22,8 @@ public class VoltageGenerator {
 
     public void send() {
         Random random = new Random();
-        Voltage voltage = new Voltage(random.nextFloat()*100, new Timestamp(System.currentTimeMillis()));
+        Voltage voltage = new Voltage(random.nextFloat()*100, new Timestamp((System.currentTimeMillis()
+                +8*60*60*1000)));
         this.rabbitTemplate.convertAndSend("voltage", voltage);
     }
 }

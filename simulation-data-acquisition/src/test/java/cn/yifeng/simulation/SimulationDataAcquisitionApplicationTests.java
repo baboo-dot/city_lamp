@@ -28,7 +28,8 @@ class SimulationDataAcquisitionApplicationTests {
 //        voltageMapper.insert(1.1f, new Timestamp(System.currentTimeMillis()));
 //        voltageMapper.insert(1.2f, new Timestamp(System.currentTimeMillis()));
 //        System.out.println(voltageMapper.queryAll());
-//        voltageMapper.deleteAll();
+//          voltageMapper.deleteAll();
+//          weatherMapper.deleteAll();
 //        System.out.println(voltageMapper.queryAll());
     }
 

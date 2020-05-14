@@ -25,7 +25,7 @@ public class WeatherGenerator {
     public void send() {
         Random random = new Random();
         Weather weather = new Weather(random.nextFloat()*40, random.nextFloat()*100,
-                new Timestamp(System.currentTimeMillis()));
+                new Timestamp(System.currentTimeMillis()+8*60*60*1000));
         this.rabbitTemplate.convertAndSend("weather", weather);
     }
 }

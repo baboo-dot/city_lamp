@@ -1,5 +1,7 @@
 package cn.yifeng.simulation;
 
+import cn.yifeng.simulation.service.VoltageGenerator;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
